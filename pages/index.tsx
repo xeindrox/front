@@ -177,7 +177,7 @@ export default function Home() {
         )}
       </div>
       <div style={{ textAlign: 'center', color: '#71717a', fontSize: 13, marginTop: 32 }}>
-        &copy; {new Date().getFullYear()} AI Rozpoznawanie Obrazów | Projekt demo
+        &copy; {new Date().getFullYear()} AI Rozpoznawanie Obrazów
       </div>
     </div>
   );
