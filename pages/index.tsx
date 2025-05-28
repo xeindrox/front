@@ -59,21 +59,24 @@ export default function Home() {
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
-      padding: '20px',
-      color: '#f3f4f6'
+      padding: '8px',
+      color: '#f3f4f6',
+      boxSizing: 'border-box',
     }}>
       <div style={{
         maxWidth: 480,
         width: '100%',
+        minWidth: 0,
         background: 'rgba(36,36,40,0.98)',
         borderRadius: 16,
         boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
-        padding: 32,
+        padding: 16,
         margin: '0 auto',
-        border: '1px solid #27272a'
+        border: '1px solid #27272a',
+        boxSizing: 'border-box',
       }}>
         <h1 style={{
-          fontSize: 32,
+          fontSize: 28,
           fontWeight: 800,
           textAlign: 'center',
           marginBottom: 8,
@@ -85,7 +88,8 @@ export default function Home() {
         <p style={{
           textAlign: 'center',
           color: '#d1d5db',
-          marginBottom: 24
+          marginBottom: 24,
+          fontSize: 15,
         }}>
           Wgraj zdjęcie, a sztuczna inteligencja rozpozna, co się na nim znajduje i przetłumaczy wynik na język polski.
         </p>
@@ -98,7 +102,7 @@ export default function Home() {
           />
           {preview && (
             <div style={{ textAlign: 'center', marginBottom: 12 }}>
-              <img src={preview} alt="Podgląd" style={{ maxWidth: '100%', maxHeight: 200, borderRadius: 8, border: '1px solid #27272a', background: '#18181b' }} />
+              <img src={preview} alt="Podgląd" style={{ maxWidth: '100%', height: 'auto', borderRadius: 8, border: '1px solid #27272a', background: '#18181b', display: 'block', margin: '0 auto' }} />
               <br />
               <button
                 type="button"
