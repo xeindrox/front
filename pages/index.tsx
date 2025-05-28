@@ -37,7 +37,7 @@ export default function Home() {
     formData.append('file', selectedFile);
 
     try {
-      const response = await axios.post('http://localhost:8000/analyze-image', formData, {
+      const response = await axios.post('https://ai-backend-580326634097.europe-central2.run.app/analyze-image', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
